@@ -45,7 +45,7 @@ async def start_handler(message: types.Message):
 
     await message.answer_photo(
         photo=IMAGE_URL,
-        caption="<b>WELCOME TO AVIATOR X OFFICIAL</b>\n\nAny Problem Send Query to Bot.",
+        caption="<b>WELCOME TO AVIATOR X OFFICIAL</b>\n\nYou face any Problem Send Query to Bot.",
         reply_markup=keyboard
     )
 
@@ -62,7 +62,7 @@ async def play_video(call: types.CallbackQuery):
 async def deposit_video(call: types.CallbackQuery):
     await call.message.answer_video(
         video=DEPOSIT_VIDEO,
-        caption="💰 <b>How to Deposit</b>\n\nStep by step 👆"
+        caption="💳 <b>How to Deposit</b>\n\nStep by step 👆"
     )
     await call.answer()
 
@@ -70,7 +70,7 @@ async def deposit_video(call: types.CallbackQuery):
 async def withdraw_video(call: types.CallbackQuery):
     await call.message.answer_video(
         video=WITHDRAW_VIDEO,
-        caption="🏧 <b>How to Withdraw</b>\n\nEasy process 👆"
+        caption="💳 <b>How to Withdraw</b>\n\nEasy process 👆"
     )
     await call.answer()
 
@@ -89,7 +89,7 @@ async def user_to_admin(message: types.Message):
         await bot.send_message(ADMIN_ID, header + "<i>Media message</i>")
         await message.copy_to(ADMIN_ID)
 
-    await message.reply("모 Your message has been sent to admin please wait.")
+    await message.reply("☑️ Your message has been sent to admin please wait for reply.")
 
 # ================== ADMIN -> USER (REPLY SYSTEM) ==================
 @dp.message(lambda m: m.from_user.id == ADMIN_ID and m.reply_to_message)
@@ -104,7 +104,7 @@ async def admin_reply(message: types.Message):
         if message.text:
             await bot.send_message(
                 user_id,
-                f"모 <b>Admin</b>\n\n{message.text}"
+                f"💻 <b>Admin</b>\n\n{message.text}"
             )
         else:
             await message.copy_to(user_id)
