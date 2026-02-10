@@ -45,7 +45,7 @@ async def start_handler(message: types.Message):
 
     await message.answer_photo(
         photo=IMAGE_URL,
-        caption="<b>WELCOME TO AVIATOR X OFFICIAL</b>\n\nClick below 👇",
+        caption="<b>WELCOME TO AVIATOR X OFFICIAL</b>\n\nAny Problem Send Query to Bot.",
         reply_markup=keyboard
     )
 
@@ -89,7 +89,7 @@ async def user_to_admin(message: types.Message):
         await bot.send_message(ADMIN_ID, header + "<i>Media message</i>")
         await message.copy_to(ADMIN_ID)
 
-    await message.reply("✅ Your message has been sent to admin please wait.")
+    await message.reply("모 Your message has been sent to admin please wait.")
 
 # ================== ADMIN -> USER (REPLY SYSTEM) ==================
 @dp.message(lambda m: m.from_user.id == ADMIN_ID and m.reply_to_message)
@@ -104,7 +104,7 @@ async def admin_reply(message: types.Message):
         if message.text:
             await bot.send_message(
                 user_id,
-                f"🧑‍💻 <b>Admin</b>\n\n{message.text}"
+                f"모 <b>Admin</b>\n\n{message.text}"
             )
         else:
             await message.copy_to(user_id)
