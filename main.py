@@ -18,11 +18,11 @@ IMAGE_URL = "https://i.ibb.co/zhfWk6CV/file-00000000116872089ee7bdb49d8c245d.png
 
 REGISTER_URL = "https://clashbattle.qzz.io"
 SUPPORT_URL = "https://t.me/coreversions"
-JOIN_TG_URL = "https://t.me/clashbatttles"
+JOIN_TG_URL = "https://t.me/coreversions"
 
 PLAY_VIDEO = "https://t.me/clashbatttles/44"
-DEPOSIT_VIDEO = "https://t.me/clashbatttles/43"
-WITHDRAW_VIDEO = "https://t.me/clashbatttles/42"
+DEPOSIT_VIDEO = "https://t.me/clashbatttles/44"
+WITHDRAW_VIDEO = "https://t.me/clashbatttles/44"
 
 # ================== BOT INIT ==================
 bot = Bot(
