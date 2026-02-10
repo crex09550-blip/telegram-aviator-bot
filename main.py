@@ -18,15 +18,15 @@ router = Router()
 async def start_handler(message: types.Message):
     keyboard = types.InlineKeyboardMarkup(
         inline_keyboard=[
-            [types.InlineKeyboardButton(text="Register Now", url="https://t.me/devdevelopers_07")],
+            [types.InlineKeyboardButton(text="Register Now", url="https://clashbattle.qzz.io")],
             [types.InlineKeyboardButton(text="Customer Support", url="https://t.me/devdevelopers_07")],
             [types.InlineKeyboardButton(text="Join us on Telegram", url="https://t.me/devdevelopers_07")],
         ]
     )
 
     await message.answer_photo(
-        photo="https://i.ibb.co/CpSM6QJ0/images-1.jpg",
-        caption="<b>WELCOME TO AVIATORX OFFICIAL</b>\n\nClick below 👇",
+        photo="https://i.ibb.co/zhfWk6CV/file-00000000116872089ee7bdb49d8c245d.png",
+        caption="<b>WELCOME TO AVIATOR X OFFICIAL</b>\n\nClick below 👇",
         reply_markup=keyboard
     )
 
